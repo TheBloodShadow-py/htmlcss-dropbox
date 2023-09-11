@@ -26,6 +26,7 @@ a {
 p,
 strong,
 span,
+label,
 h1,
 h2,
 h3,
@@ -39,7 +40,8 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   line-height: 1.2;
 }
 
@@ -65,7 +67,7 @@ h3 {
 }
 
 .col-4 {
-  width: calc((100% / 12) * 4);
+  width: calc(((100% / 12) * 4) - 35px);
 }
 
 .col-6 {
@@ -74,6 +76,10 @@ h3 {
 
 .col-8 {
   width: calc((100% / 12) * 8);
+}
+
+.col-12 {
+  width: calc((100% / 12) * 12);
 }
 
 .flex {
@@ -105,14 +111,17 @@ h3 {
 :root {
   --brand-color: #0061ff;
   --secondary-brand-color: #b4d0e7;
-  --header-text-color: #464646;
+  --text-color: #464646;
 }
 
 /* HEADER */
 
-header {
+.main-header {
   background-color: white;
   position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .header-container {
@@ -125,7 +134,7 @@ header {
   gap: 40px;
   align-items: center;
   font-weight: 300;
-  color: var(--header-text-color);
+  color: var(--text-color);
 }
 
 .header-wrapper img {
@@ -139,6 +148,11 @@ header {
 
 .header-items li {
   cursor: pointer;
+  transition: 0.2s all;
+}
+
+.header-items li:hover {
+  color: var(--brand-color);
 }
 
 /* HERO SECTION */
@@ -178,7 +192,143 @@ header {
   font-size: calc(0.9rem + 0.15vw);
 }
 
-.gg-arrow-down {
-  transform: translateY(35px) scale(2.2);
+.fa-arrow-down {
+  transform: translateY(25px);
   cursor: pointer;
+}
+
+/* PRICE SECTION */
+
+.radio-container label {
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.plans-section {
+  margin-top: 150px;
+  padding: 10px;
+}
+
+.price-row {
+  justify-content: space-between;
+}
+
+.plans-section h2 {
+  font-weight: 600;
+  font-size: 38px;
+  margin-bottom: 35px;
+}
+
+.radio-container {
+  display: inline-block;
+  margin-right: 18px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+.price-card {
+  border: 1px solid #d0d0d3;
+  border-radius: 3px;
+  min-height: 1000px;
+  color: var(--text-color);
+}
+
+.plan-type {
+  border-bottom: 1px solid #d0d0d3;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.plan-description {
+  padding: 35px 30px;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.plan-description li,
+.plan-description strong,
+.plan-description span,
+.plan-description h3 {
+  padding: 10px 0px;
+}
+
+.plan-description strong {
+  display: block;
+}
+
+.plan-description .btn {
+  margin: 0 auto;
+  width: 100%;
+  padding: 12px 8px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.plan-description header h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: black;
+}
+
+.plan-description header strong {
+  font-weight: 600;
+  color: black;
+}
+
+.plan-description header span {
+  color: #6b6b6b;
+}
+
+.plan-description p {
+  max-width: 70%;
+}
+
+.plan-description ul li {
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.plan-description section strong {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.icon-wrapper {
+  width: 7px;
+}
+
+.buy-now::after {
+  content: "";
+  display: table;
+  border-bottom: 1px solid #d0d0d3;
+  margin-top: 55px;
+  width: 50px;
+}
+
+.buy-now a {
+  text-decoration: underline;
+  color: var(--brand-color);
+  transition: 0.2s all;
+}
+.buy-now a:hover {
+  color: #4489f8;
+}
+
+.col-12 .long-price-card {
+  border: 1px solid #d0d0d3;
+  border-radius: 3px;
+  color: var(--text-color);
+  margin-top: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.col-12 .long-price-card .main-btn {
+  position: absolute;
+  width: 236px;
+  top: 75px;
+  right: 30px;
 }

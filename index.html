@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dropbox business</title>
-    <link href="https://unpkg.com/css.gg/icons/icons.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="main-header">
       <div class="header-container flex">
         <div class="flex header-wrapper">
           <img src="./img/logo-small.png" alt="Logo" />
@@ -46,7 +49,10 @@
               </p>
               <a class="btn main-btn">Inizia la tua prova gratuita</a>
               <span>Annulla in qualsiasi momento</span>
-              <i class="gg-arrow-down"></i>
+              <i
+                class="fa-solid fa-arrow-down fa-2xl"
+                style="color: #000000"
+              ></i>
             </div>
             <img
               class="hero-img col-8"
@@ -56,6 +62,302 @@
           </div>
         </div>
       </div>
+      <!-- PRICE SECTION -->
+      <section class="plans-section">
+        <div class="container">
+          <h2>Trova il piano business che fa per te</h2>
+          <div class="radio-container">
+            <input type="radio" value="monthly" />
+            <label class="radio-label" for="monthly"
+              >Fatturazione mensile</label
+            >
+          </div>
+          <div class="radio-container">
+            <input type="radio" value="annually" />
+            <label class="radio-label" for="annually">
+              Fatturazione annuale
+            </label>
+          </div>
+          <div class="row price-row">
+            <div class="col-4">
+              <div class="price-card">
+                <div class="plan-type flex">
+                  <i class="fa-solid fa-user" style="color: #000000"></i
+                  ><strong>Singolo</strong>
+                </div>
+                <div class="plan-description flex">
+                  <header>
+                    <h3>Professional</h3>
+                    <strong>&euro; 12.00</strong>
+                    <span>/mese</span>
+                  </header>
+                  <ul>
+                    <li class="flex">
+                      <div class="icon-wrapper">
+                        <i class="fa-solid fa-user" style="color: #000000"></i>
+                      </div>
+                      1 utente
+                    </li>
+                    <li class="flex">
+                      <div class="icon-wrapper">
+                        <i
+                          class="fa-solid fa-folder"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                      5 TB di spazio di archiviazione sicuro
+                    </li>
+                    <li class="flex">
+                      <div class="icon-wrapper">
+                        <i
+                          class="fa-solid fa-share-nodes"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                      Funzioni di produttività premium e condivisione file
+                      semplice e sicura
+                    </li>
+                  </ul>
+                  <section>
+                    <a href="#" class="btn main-btn"
+                      >Prova gratis per 30 giorni</a
+                    >
+                    <span class="buy-now"
+                      >oppure <a href="#">acquista ora</a></span
+                    >
+                  </section>
+                  <section>
+                    <strong>Punti Salienti del piano</strong>
+                    <ul>
+                      <li class="flex">
+                        <div class="icon-wrapper">
+                          <i
+                            class="fa-solid fa-check"
+                            style="color: #0061ff"
+                          ></i>
+                        </div>
+                        Invia file fino a 100 GB con Dropbox Transfert
+                      </li>
+                      <li class="flex">
+                        <div class="icon-wrapper">
+                          <i
+                            class="fa-solid fa-check"
+                            style="color: #0061ff"
+                          ></i>
+                        </div>
+                        Cartelle offline su dispositivi mobili
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="price-card">
+                <div class="plan-type flex">
+                  <i class="fa-solid fa-users" style="color: #000000"></i
+                  ><strong>Team</strong>
+                </div>
+                <div class="plan-description flex">
+                  <header>
+                    <h3>Advanced</h3>
+                    <strong>&euro; 18.00</strong>
+                    <span>/utente/mese</span>
+                  </header>
+                  <ul>
+                    <li class="flex">
+                      <div class="icon-wrapper">
+                        <i class="fa-solid fa-users" style="color: #000000"></i>
+                      </div>
+                      3 o più utenti
+                    </li>
+                    <li class="flex">
+                      <div class="icon-wrapper">
+                        <i
+                          class="fa-solid fa-folder"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                      Tutto lo spazio di cui ha bisogno il tuo team
+                    </li>
+                    <li class="flex">
+                      <div class="icon-wrapper">
+                        <i
+                          class="fa-solid fa-share-nodes"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                      Sofisticate funzioni di controllo e per tenere al sicuro
+                      tutti i file del tuo team
+                    </li>
+                  </ul>
+                  <section>
+                    <a href="#" class="btn main-btn"
+                      >Prova gratis per 30 giorni</a
+                    >
+                    <span class="buy-now"
+                      >oppure <a href="#">acquista ora</a></span
+                    >
+                  </section>
+                  <section>
+                    <strong>Punti Salienti del piano</strong>
+                    <ul>
+                      <li class="flex">
+                        <div class="icon-wrapper">
+                          <i
+                            class="fa-solid fa-check"
+                            style="color: #0061ff"
+                          ></i>
+                        </div>
+                        Nessun limite di spazio per i file
+                      </li>
+                      <li class="flex">
+                        <div class="icon-wrapper">
+                          <i
+                            class="fa-solid fa-check"
+                            style="color: #0061ff"
+                          ></i>
+                        </div>
+                        Cartelle offline su dispositivi mobili
+                      </li>
+                      <li class="flex">
+                        <div class="icon-wrapper">
+                          <i
+                            class="fa-solid fa-check"
+                            style="color: #0061ff"
+                          ></i>
+                        </div>
+                        Risparmio del 50% rispetto alle iscrizioni singole
+                      </li>
+                      <li class="flex">
+                        <div class="icon-wrapper">
+                          <i
+                            class="fa-solid fa-check"
+                            style="color: #0061ff"
+                          ></i>
+                        </div>
+                        Possibilità di inserire nuovi membri del team
+                      </li>
+                      <li class="flex">
+                        <div class="icon-wrapper">
+                          <i
+                            class="fa-solid fa-check"
+                            style="color: #0061ff"
+                          ></i>
+                        </div>
+                        Gestione dei permessi in base ai ruoli
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="price-card">
+                <div class="plan-type flex">
+                  <i class="fa-solid fa-building" style="color: #000000"></i
+                  ><strong>Azienda</strong>
+                </div>
+                <div class="plan-description flex">
+                  <header>
+                    <h3>Enterprise</h3>
+                    <strong>Contattaci</strong>
+                    <span>-</span>
+                  </header>
+                  <ul>
+                    <li class="flex">
+                      <div class="icon-wrapper">
+                        <i class="fa-solid fa-user" style="color: #000000"></i>
+                      </div>
+                      10 o più utenti
+                    </li>
+                    <li class="flex">
+                      <div class="icon-wrapper">
+                        <i
+                          class="fa-solid fa-folder"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                      Soluzioni personalizzabli per la tua azienda
+                    </li>
+                    <li class="flex">
+                      <div class="icon-wrapper">
+                        <i
+                          class="fa-solid fa-share-nodes"
+                          style="color: #000000"
+                        ></i>
+                      </div>
+                      Assistenza personalizzata per aiutare gli amministratori
+                      in una gestione su larga scala
+                    </li>
+                  </ul>
+                  <section>
+                    <a href="#" class="btn main-btn">Contattaci</a>
+                    <span class="buy-now"
+                      >oppure <a href="#">acquista ora</a></span
+                    >
+                  </section>
+                  <section>
+                    <strong>Punti Salienti del piano</strong>
+                    <ul>
+                      <li class="flex">
+                        <div class="icon-wrapper">
+                          <i
+                            class="fa-solid fa-check"
+                            style="color: #0061ff"
+                          ></i>
+                        </div>
+                        Cartelle offline su dispositivi mobili
+                      </li>
+                      <li class="flex">
+                        <div class="icon-wrapper">
+                          <i
+                            class="fa-solid fa-check"
+                            style="color: #0061ff"
+                          ></i>
+                        </div>
+                        Servizio assistenza 24/h
+                      </li>
+                      <li class="flex">
+                        <div class="icon-wrapper">
+                          <i
+                            class="fa-solid fa-check"
+                            style="color: #0061ff"
+                          ></i>
+                        </div>
+                        Possibilità di personalizzazione totale
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="long-price-card">
+                <div class="plan-type flex">
+                  <i class="fa-solid fa-building" style="color: #000000"></i
+                  ><strong>Team</strong>
+                </div>
+                <div class="plan-description flex">
+                  <header>
+                    <h3>Enterprise</h3>
+                    <strong>Contatta l'ufficio vendite per i prezzi</strong>
+                  </header>
+                  <p>
+                    Soluzioni personalizzate e supporto su misura per aiutare i
+                    professionisti IT nella gestione su qualsiasi scala
+                  </p>
+                  <a href="#" class="btn main-btn"
+                    >Contatta l'ufficio vendite</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
