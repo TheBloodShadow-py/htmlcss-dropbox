@@ -11,6 +11,7 @@ html {
   min-width: 100vh;
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 ul,
@@ -70,8 +71,16 @@ h4 {
   width: calc(((100% / 12) * 4) - 35px);
 }
 
+.col-5 {
+  width: calc((100% / 12) * 5);
+}
+
 .col-6 {
   width: calc((100% / 12) * 6);
+}
+
+.col-7 {
+  width: calc((100% / 12) * 7);
 }
 
 .col-8 {
@@ -106,6 +115,10 @@ h4 {
 .main-btn {
   width: 200px;
   padding: 12px 8px;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 :root {
@@ -229,7 +242,6 @@ h4 {
 .price-card {
   border: 1px solid #d0d0d3;
   border-radius: 3px;
-  min-height: 1000px;
   color: var(--text-color);
 }
 
@@ -331,4 +343,51 @@ h4 {
   width: 236px;
   top: 75px;
   right: 30px;
+}
+
+/* PARTNER SECTION */
+
+.partner-section img {
+  width: 100%;
+}
+
+.partner-section {
+  padding: 10px;
+  margin: 120px 0px;
+}
+
+.partner-container {
+  gap: 45px;
+}
+
+.partner-text {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  margin-top: 60px;
+  color: var(--text-color);
+  max-width: 300px;
+}
+
+.partner-text h2 {
+  font-weight: 600;
+  font-size: 26px;
+  color: black;
+}
+
+.partner-text p {
+  font-size: 16px;
+}
+
+.partner-text .btn {
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #d0d0d3;
+  color: var(--text-color);
+  padding: 10px 20px;
+}
+
+.partner-text .btn:hover {
+  background-color: var(--text-color);
+  color: white;
 }

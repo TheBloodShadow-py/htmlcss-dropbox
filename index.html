@@ -17,9 +17,9 @@
         <div class="flex header-wrapper">
           <img src="./img/logo-small.png" alt="Logo" />
           <ul class="header-items flex">
-            <li>Perchè Dropbox</li>
+            <li><a href="#why-dropbox">Perchè Dropbox</a></li>
+            <li><a href="#our-plans">Piani e Prezzi</a></li>
             <li>Funzioni</li>
-            <li>Piani e Prezzi</li>
           </ul>
         </div>
         <div class="header-wrapper flex">
@@ -34,7 +34,7 @@
     </header>
     <main>
       <!-- HERO SECTION -->
-      <div class="hero-section">
+      <div class="hero-section" id="why-dropbox">
         <div class="lg-container flex hero-container">
           <div class="title-container">
             <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
@@ -63,11 +63,11 @@
         </div>
       </div>
       <!-- PRICE SECTION -->
-      <section class="plans-section">
+      <section class="plans-section" id="our-plans">
         <div class="container">
           <h2>Trova il piano business che fa per te</h2>
           <div class="radio-container">
-            <input type="radio" value="monthly" />
+            <input type="radio" value="monthly" checked />
             <label class="radio-label" for="monthly"
               >Fatturazione mensile</label
             >
@@ -78,8 +78,8 @@
               Fatturazione annuale
             </label>
           </div>
-          <div class="row price-row">
-            <div class="col-4">
+          <div class="row price-row flex-grow">
+            <div class="col-4 flex">
               <div class="price-card">
                 <div class="plan-type flex">
                   <i class="fa-solid fa-user" style="color: #000000"></i
@@ -152,7 +152,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 flex">
               <div class="price-card">
                 <div class="plan-type flex">
                   <i class="fa-solid fa-users" style="color: #000000"></i
@@ -252,7 +252,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 flex">
               <div class="price-card">
                 <div class="plan-type flex">
                   <i class="fa-solid fa-building" style="color: #000000"></i
@@ -333,26 +333,46 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="long-price-card">
-                <div class="plan-type flex">
-                  <i class="fa-solid fa-building" style="color: #000000"></i
-                  ><strong>Team</strong>
-                </div>
-                <div class="plan-description flex">
-                  <header>
-                    <h3>Enterprise</h3>
-                    <strong>Contatta l'ufficio vendite per i prezzi</strong>
-                  </header>
-                  <p>
-                    Soluzioni personalizzate e supporto su misura per aiutare i
-                    professionisti IT nella gestione su qualsiasi scala
-                  </p>
-                  <a href="#" class="btn main-btn"
-                    >Contatta l'ufficio vendite</a
-                  >
-                </div>
+          <div class="col-12 flex">
+            <div class="long-price-card">
+              <div class="plan-type flex">
+                <i class="fa-solid fa-building" style="color: #000000"></i
+                ><strong>Team</strong>
+              </div>
+              <div class="plan-description flex">
+                <header>
+                  <h3>Enterprise</h3>
+                  <strong>Contatta l'ufficio vendite per i prezzi</strong>
+                </header>
+                <p>
+                  Soluzioni personalizzate e supporto su misura per aiutare i
+                  professionisti IT nella gestione su qualsiasi scala
+                </p>
+                <a href="#" class="btn main-btn">Contatta l'ufficio vendite</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PARTNER SECTION -->
+      <section class="partner-section">
+        <div class="container">
+          <div class="row partner-container">
+            <div class="col-7">
+              <figure>
+                <img src="./img/partner.png" alt="Partner" />
+              </figure>
+            </div>
+            <div class="col-5">
+              <div class="flex partner-text">
+                <h2>Entra in contatto con un partner Dropbox</h2>
+                <p>
+                  Trova un partner Dropbox e HelloSign di fiducia. Ottieni le
+                  soluzioni e i servizi necessari per raggiungere i tuoi
+                  obiettivi aziendali, tra cui implementazione, integrazione,
+                  gestione e supporto continui.
+                </p>
+                <a href="#" class="btn">Trova un partner</a>
               </div>
             </div>
           </div>
