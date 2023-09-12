@@ -130,7 +130,7 @@ h4 {
 /* HEADER */
 
 .main-header {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.945);
   position: sticky;
   top: 0;
   left: 0;
@@ -390,4 +390,39 @@ h4 {
 .partner-text .btn:hover {
   background-color: var(--text-color);
   color: white;
+}
+
+.function-card {
+  flex-direction: column;
+  gap: 25px;
+}
+
+.function-card figure img {
+  width: 100%;
+}
+
+.functions-section {
+  padding: 10px;
+}
+
+.functions-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 80px;
+}
+
+.function-card h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: black;
+}
+
+.function-card p {
+  font-size: 16px;
+}
+
+.functions-section h2 {
+  font-weight: 600;
+  font-size: 38px;
+  margin-bottom: 60px;
 }
