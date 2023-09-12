@@ -548,6 +548,7 @@ span {
 .fluid-box {
   background-color: #b4d0e7;
   min-height: 320px;
+  padding: 10px;
 }
 
 .fluid-box .container {
@@ -573,4 +574,53 @@ span {
 .fluid-box .container .btn:hover {
   color: white;
   background-color: var(--text-color);
+}
+
+/* FAQ SECTION */
+
+.faq-section {
+  margin: 150px 0px;
+  padding: 10px;
+}
+
+.faq-section h2 {
+  margin-bottom: 65px;
+  font-weight: 600;
+  font-size: 38px;
+  color: black;
+}
+
+.question-box {
+  flex-direction: column;
+}
+
+.question-box li {
+  gap: 20px;
+  font-weight: 600;
+  padding: 40px 0px;
+  font-size: 15px;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  min-height: 0px;
+  transition-delay: 50ms;
+}
+
+.question-box li:hover {
+  min-height: 200px;
+}
+
+.question-box li .icon-wrapper {
+  transform: translateX(-50px);
+  transition: all 0.2s linear;
+  transition-delay: 50ms;
+}
+
+.question-box li:hover .icon-wrapper {
+  transform: translateX(-45px) rotate(0.5turn);
+}
+
+.question-box li:not(:nth-child(2n)) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
