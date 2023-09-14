@@ -46,6 +46,18 @@ h4 {
   line-height: 1.2;
 }
 
+.black {
+  color: black;
+}
+
+.blue {
+  color: #0061ff;
+}
+
+.gray {
+  color: #999999;
+}
+
 .up-arrow {
   position: fixed;
   z-index: 999;
@@ -223,6 +235,21 @@ h4 {
 .radio-container label {
   color: var(--text-color);
   font-size: 15px;
+}
+
+.radio-btn {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid var(--text-color);
+  transform: translateY(3px);
+  transition: border 0.1s linear;
+}
+
+.radio-btn:checked {
+  border: 5px solid var(--brand-color);
 }
 
 .plans-section {
@@ -589,7 +616,6 @@ span {
 .faq-section {
   margin: 150px 0px;
   padding: 10px;
-  margin-bottom: 700px;
 }
 
 .faq-section h2 {
@@ -610,13 +636,13 @@ span {
   font-size: 15px;
   justify-content: space-between;
   cursor: pointer;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   min-height: 0px;
   transition-delay: 50ms;
 }
 
 .question-box li:hover {
-  min-height: 200px;
+  padding-bottom: 150px;
 }
 
 .question-box li .icon-wrapper {
@@ -641,9 +667,6 @@ footer {
   color: white;
   padding: 10px;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .footer-container {
